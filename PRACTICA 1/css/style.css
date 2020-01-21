@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css?family=Oswald|Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Oswald&display=swap");
+/*las etiquetas import siempre deben de ir al incio*/
+/*
+h1: selector de etiqueta
+
+*/
+* {
+  margin: 0px;
+  padding: 0px 0px;
+}
+
+header {
+  width: 100%;
+  height: 300vh;
+  background: greenyellow;
+  position: relative;
+}
+
+#Titulo {
+  width: 75%;
+  color: purple;
+  font-family: "Pacifico", cursive !important;
+  font-size: 70px;
+  text-align: center;
+  font-weight: 200;
+  position: absolute;
+  bottom: 50%;
+  transform: translateY(50%);
+}
+
+#DivisionArticulos {
+  background: darkgray;
+  width: 75%;
+  height: 70vh;
+  margin: 10px 1px;
+  float: left;
+}
+
+article {
+  background: #f3c7cf;
+  margin-top: 10px;
+}
+
+h3 {
+  text-align: center;
+  font-family: "Oswald", sans-serif;
+}
+
+.parrafoaArticulo {
+  text-align: justify;
+  padding: 20px 10px;
+  border: 2px dashed black;
+}
+
+aside {
+  background: #e44230;
+  width: 24.2%;
+  height: 70vh;
+  color: white;
+  margin-top: 10px;
+  float: left;
+}
+
+img {
+  width: 18vw;
+  height: 21vh;
+}
+
+.publicidad {
+  text-align: center;
+  margin-top: 10px;
+}
+
+footer {
+  background: black;
+  clear: both;
+  /* la propiedad clear both sirve para borrar las propiedades que buscan copiar a los dos elementos anteriores ejemplo tenemos aside y article con una posocion float izquierda*/
+  color: white;
+  height: 10vh;
+  text-align: center;
+}
+
+/*# sourceMappingURL=style.css.map */
