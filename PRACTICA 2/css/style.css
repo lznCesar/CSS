@@ -28,6 +28,7 @@ header {
   width: 75%;
   color: white;
   border: groove;
+  font-size: 17px;
   text-align: justify;
   margin: 5px 5px;
   padding-top: 20px;
@@ -45,16 +46,60 @@ header {
 }
 
 #parrafo2 {
-  width: 50%;
+  width: 35%;
   float: left;
   text-align: justify;
   margin-right: 20px;
+  color: red;
 }
 
-.publicidad {
-  width: 100%;
-  background: red;
+#parrafo3 {
+  width: 35%;
   float: left;
+  text-align: justify;
+  color: black;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+#imagen {
+  width: 60%;
+  float: left;
+  padding: 10px;
+}
+
+aside {
+  width: 20%;
+  height: 100vh;
+  background: white;
+  float: left;
+  text-align: center;
+}
+
+#cuadroverde {
+  background: green;
+  width: 100%;
+  height: 25vh;
+  border: groove;
+}
+
+#cuadrogris {
+  background: grey;
+  width: 100%;
+  height: 80vh;
+  border: groove;
+}
+
+footer {
+  clear: both;
+  text-align: center;
+  width: 80%;
+  background: #83b104;
+  height: 10vh;
+  margin: 5px 5px;
+  float: left;
+  font-size: 35px;
+  font-style: italic;
 }
 
 /*# sourceMappingURL=style.css.map */

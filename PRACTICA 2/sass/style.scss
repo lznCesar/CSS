@@ -17,43 +17,80 @@ border: groove;
 }
 .titulodiv{ 
     font-family: 'Montserrat', sans-serif;
-    color: green;
-}
+    color: green;}
 
 #todoslosarticulos{
     background-color: rgb(131, 177, 4);
     width: 75%;
     color: white;
     border: groove;
+    font-size: 17px;
     text-align: justify;
     margin: 5px 5px;
     padding-top: 20px;
     padding-right: 10px;
     padding-left: 10px;
     padding-bottom: 20px;
-    float: left;
-}
+    float: left;}
+
 #parrafo1{
     width: 50%;
     float: left;
     text-align: justify;
-    margin-right: 30px;
-}
+    margin-right: 30px;}
 
 #parrafo2{
-    width: 50%;
+    width: 35%;
     float: left;
     text-align: justify;
-    margin-right: 20px;
- 
+    margin-right: 20px; 
+    color: red;
 }
 
-
-
-.publicidad{
-    width: 100%;
-    background: red;
+#parrafo3{
+    width: 35%;
     float: left;
-
+    text-align: justify;
+    color: black;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+#imagen{
+    width: 60%;
+    float: left;
+    padding: 10px;
 }
 
+aside{
+    width: 20%;
+    height: 100vh;
+    background: white;
+    float: left;
+    text-align: center;
+}
+#cuadroverde{
+    background: green;
+    width: 100%;
+    height: 25vh;
+    border: groove;
+}
+
+#cuadrogris{
+    background: grey;
+    width: 100%;
+    height: 80vh;
+    border: groove;
+}
+
+footer{
+    clear: both;
+    text-align: center;
+    width: 80%;
+    background:rgb(131, 177, 4);
+    height: 10vh;
+    margin: 5px 5px;
+    float: left;
+    font-size: 35px;
+    font-style: italic;
+}
+ 
