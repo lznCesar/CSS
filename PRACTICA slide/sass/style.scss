@@ -1,0 +1,56 @@
+body{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+}
+
+.slider{
+    width: 100%;
+    background: #000;
+    height: 100%;
+    margin: auto;
+    // la siguiente funcion ayuda a evitar la sobre carga 
+    overflow: hidden;
+    
+}
+
+.slider> ul{
+    display: flex;
+    padding: 0;
+    width: 400%;
+    //margin-left: -300%;
+    animation: slide 5s linear infinite alternate;
+    // para invocar la animacion se utiliza la propiedad animation la cual debe de tener tres datos (nombre de la animacion, segundos de la animación, el movimiento, la cantidad de veces que se van a reproducir) 
+}
+
+.slider>ul>li {
+    width: 100%;
+    list-style: none;
+}
+
+.slider>ul>li>img{
+    width: 100%;
+}
+
+@keyframes slide{
+
+    0% {margin-left: 0%;}
+
+    20% {
+        margin-left: 0%;}
+
+    25% {
+        margin-left: -100%;}
+    45% {
+        margin-left: -100%;}
+    50%{
+        margin-left: -200%;}
+    70%{
+        margin-left: -200%;}
+    75%{
+        margin-left: -300%;}
+    100%{
+        margin-left: -300%;}
+
+}
