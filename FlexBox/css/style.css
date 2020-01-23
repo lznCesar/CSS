@@ -1,0 +1,19 @@
+.flex-container {
+  background: dodgerblue;
+  display: flex;
+  height: 80vh;
+  flex-wrap: wrap;
+  align-content: flex-end;
+}
+
+.flex-container > div {
+  background: grey;
+  width: 17%;
+  height: 17vh;
+  margin: 10px 5px;
+  font-size: 30px;
+  text-align: center;
+  line-height: 100px;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,24 @@
+.flex-container{
+        background: dodgerblue;
+        display: flex;
+        height: 80vh;
+        // flex-direction: column-reverse;
+        //flex-wrap: wrap;
+        // en esta propiedad el padre se adapata a los hijos 
+        // flex-flow: column wrap;
+        //justify-content: center;
+        //justify-content: space-between;
+        //align-items: center;
+        flex-wrap: wrap;
+        align-content: flex-end;
+}
+
+.flex-container > div {
+    background: grey;
+    width: 17%;
+    height: 17vh;
+    margin: 10px 5px;
+    font-size: 30px;
+    text-align: center;
+    line-height: 100px;
+}
