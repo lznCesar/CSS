@@ -1,0 +1,74 @@
+body {
+  width: 100%;
+  height: 100vh;
+  margin: 0px;
+  padding: 0px;
+}
+
+.box {
+  width: 90%;
+  height: 90%;
+  background: lightgreen;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+}
+
+.pelota {
+  width: 90px;
+  height: 90px;
+  background: black;
+  border-radius: 900%;
+  animation: box 8s linear infinite;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+}
+
+@keyframes box {
+  0% {
+    top: 0;
+    left: 0;
+  }
+  10% {
+    top: 90%;
+    left: 20;
+  }
+
+  20% {
+    top: 0%;
+    left: 40%;
+  }
+  30% {
+    top: 90%;
+    left: 60;
+  }
+
+  40% {
+    top: 0%;
+    left: 80%;
+  }
+  50% {
+    top: 90%;
+    left:93%;   }
+  60% {
+  top: 0%;
+ left: 80%;}
+70% {
+top: 90%;
+left: 60%;
+}
+
+80% {
+ top: 0%;
+  left: 40%;}
+
+
+90%{top: 90%;
+ left: 20%;}
+
+100% {top: 0%;
+       left:0%;
+  }
+
+}
