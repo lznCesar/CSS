@@ -1,0 +1,83 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #000;
+}
+
+.background {
+  // el position fiexed es el que establece el background la imagen se queda con una posicion estatica fixed
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+}
+
+.background .rotate {
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  //background: rgba(172, 255, 47, 0.445);
+  top: calc(50% - 200px);
+  // la funcion calc nos ayuna a poder realizar operaciones entre diferentes productos nos ayuda a centrar
+  left: calc(50% - 200px);
+  animation: rotator 5s linear infinite;
+ transform-style: preserve-3d;
+ zoom:1
+}
+
+.background .rotate .sphere {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transform-style: preserve-3d;
+  border-radius: 50%;;
+
+}
+
+.background .rotate .sphere:nth-child(2)
+{
+   transform: rotate(90deg)}
+
+.background .rotate .sphere:nth-child(3) {
+    transform: rotate(45deg)
+}
+
+.background .rotate .sphere:nth-child(4) {
+    transform: rotate(-45deg)
+}
+
+.background .rotate .sphere span{
+    background: radial-gradient( rgb(25, 198, 196),#FFF);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transform-style: preserve-3d;
+    border-radius: 50%;
+}
+
+.background .rotate .sphere span:nth-child(1){
+    transform: rotateY(0deg);
+}
+.background .rotate .sphere span:nth-child(2){
+    transform: rotateY(30deg);}
+
+.background .rotate .sphere span:nth-child(3){
+    transform: rotateY(60deg);
+}
+.background .rotate .sphere span:nth-child(4){
+    transform: rotateY(90deg);
+}
+.background .rotate .sphere span:nth-child(5){
+    transform: rotateY(120deg);
+}
+.background .rotate .sphere span:nth-child(6){
+    transform: rotateY(150deg);
+}
+
+@keyframes rotator {
+    0% {transform: rotateX(0deg) rotateY(0deg);
+}
+
+    100%{
+        transform: rotateX(360deg) rotateY(360deg);}
+    }
+
