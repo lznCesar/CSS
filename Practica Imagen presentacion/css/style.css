@@ -1,0 +1,98 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.card {
+  position: absolute;
+  top: calc(50% - 200px);
+  left: calc(50% - 150px);
+  width: 300px;
+  height: 400px;
+  transform-style: preserve-3d;
+  perspective: 300px;
+}
+
+.card .front {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: rotateX(0deg);
+  transition: 0.5s;
+  backface-visibility: hidden;
+}
+
+.card .front img {
+  width: 100%;
+}
+
+.card:hover .front {
+  transform: rotateX(-180deg);
+}
+
+.card .back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: rotateX(180deg);
+  backface-visibility: hidden;
+  transition: 0.5s;
+}
+
+.card:hover .back {
+  transform: rotateX(0deg);
+}
+
+.card .back .details {
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.card .back .details h2 {
+  margin: 0;
+  padding: 0;
+  font-size: 24px;
+}
+
+.card .back .details h2 span {
+  color: blue;
+  font-size: 17px;
+}
+
+.socialIcons {
+  padding: 10px 0px;
+}
+
+.socialIcons a {
+  display: inline-block;
+  background: white;
+  width: 36px;
+  height: 36px;
+  text-align: center;
+  border-radius: 50%;
+  text-decoration: none;
+}
+
+.socialIcons a .fa {
+  line-height: 36px;
+}
+
+.card .back::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ebe4e4;
+}
+
+/*# sourceMappingURL=style.css.map */
