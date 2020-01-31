@@ -5,25 +5,26 @@ body {
 
 header {
   display: flex;
-  width: 100%;
-  height: 10vh;
+  width: 100vw;
+  height: 12vh;
+  display: flex;
   flex-direction: row;
   align-items: center;
 }
 header #menus {
   background: #edcd1e;
   width: 30%;
-  height: 15vh;
+  height: 12vh;
   position: absolute;
 }
-header img {
+header #menus img {
   position: absolute;
   width: 50px;
   height: 50px;
   left: 20%;
   top: 30%;
 }
-header p {
+header #menus p {
   position: absolute;
   text-align: left;
   font-family: Arial, Helvetica, sans-serif;
@@ -38,7 +39,6 @@ header .inicio {
   padding: 0;
   background: #212c3b;
   color: white;
-  list-style: none;
   display: flex;
   justify-content: space-around;
 }
