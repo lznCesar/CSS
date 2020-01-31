@@ -1,0 +1,74 @@
+$Color1: #18191f;
+$MedidaEnlace: 50px;
+$colores: #00f3ff, #f00, #0f0;
+$fila: 1,2,3;
+/* $ caracter que se indicara a SASS que se declara una variable
+$********* en los asteriscos se esccribira el nombre de la variable:
+    Caracteristicas de las variables
+        1. No deben de iniciar con un numero 
+        2. Son Casessensitive
+        3. No pueden ser silo un numero (tiene que ser alfanumerica)
+        4. No puede haber dos varialbes con exactamente el mismo nombre
+        5. No puede haber espacios entre las variables si se desa aplicar espaciado se tiene que remplazar con un gion bajo "_"
+
+$Color1 : los dos puntos haccen referencia a que la variable sera inicializada 
+
+
+$Color 1:
+        */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+  list-style: none;
+  background: $Color1;
+
+}
+
+ul{
+    position: relative;
+    display: flex;
+    margin: 10px 0;
+
+    & li{
+        list-style: none;
+
+        & a {
+            display: block;
+            width: 50px;
+            height: 50px;
+            background: $Color1;
+            text-align: center;
+            line-height: $MedidaEnlace;
+            margin: 0 10px;
+            border-radius: 15%;
+            box-shadow: -2px -2px 3px rgba(255, 255, 255, 0.05), 3px 3px 3px rgba(0,0,0,0.2);
+
+            & .fa{
+                font-size: 22px;
+                color: #555;
+            }
+
+            &:hover .fa{
+                color: #00f3ff;
+                text-shadow: 0 0 15px #00f3ff;
+            }
+            
+        }
+          
+    }
+    @each $Valorfila in $fila {
+        &:nth-child(#{$Valorfila}) li a:hover .fa {
+            color: nth($colores, $Valorfila);
+            text-shadow: 0 0 15px nth($colores, $Valorfila);
+        }
+    }
+}
