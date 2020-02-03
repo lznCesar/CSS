@@ -6,41 +6,93 @@ body {
 header {
   display: flex;
   width: 100vw;
-  height: 12vh;
+  height: 15vh;
   display: flex;
   flex-direction: row;
   align-items: center;
+  position: relative;
 }
 header #menus {
   background: #edcd1e;
-  width: 30%;
-  height: 12vh;
+  width: 28%;
+  height: 15vh;
   position: absolute;
 }
 header #menus img {
   position: absolute;
   width: 50px;
   height: 50px;
-  left: 20%;
-  top: 30%;
+  left: 15%;
+  top: 23%;
+  cursor: pointer;
 }
 header #menus p {
   position: absolute;
   text-align: left;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 22px;
-  left: 40%;
-  top: 10%;
+  left: 32%;
+  top: 5%;
+  cursor: pointer;
 }
 header .inicio {
-  width: 70%;
+  right: 0%;
+  width: 72%;
   height: 100%;
   margin: 0;
   padding: 0;
+  position: absolute;
   background: #212c3b;
   color: white;
-  display: flex;
+  display: inline-flex;
   justify-content: space-around;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+}
+header .inicio .nopintar {
+  padding: 10px;
+  margin: 5px;
+  transform: translateY(60px);
+  cursor: pointer;
+  transition: color yellow 5s ease 0s;
+}
+header .inicio .subinicios {
+  padding: 10px;
+  margin: 5px;
+  transform: translateY(60px);
+  cursor: pointer;
+}
+
+#divvideo {
+  position: relative;
+  width: 100%;
+  min-height: 500px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#divvideo video {
+  position: absolute;
+  width: 100%;
+}
+#divvideo .titulovideo {
+  margin: 10% px;
+  padding: 10px 300px;
+  color: white;
+  position: absolute;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 50px;
+  text-align: center;
+  top: 5%;
+  z-index: 3;
+}
+
+#SERVICIOS {
+  background: grey;
+  width: 100%;
+  height: 1000px;
+  font-size: 40px;
 }
 
 /*# sourceMappingURL=style.css.map */
