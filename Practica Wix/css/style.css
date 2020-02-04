@@ -66,6 +66,7 @@ header .inicio .subinicios {
 #divvideo {
   position: relative;
   width: 100%;
+  background: url("../video/Working Site - 3741.mp4");
   min-height: 500px;
   background-attachment: fixed;
   background-position: center;
@@ -74,7 +75,10 @@ header .inicio .subinicios {
 }
 #divvideo video {
   position: absolute;
+  margin: 0;
+  padding: 0;
   width: 100%;
+  height: 100%;
 }
 #divvideo .titulovideo {
   margin: 10% px;
@@ -85,14 +89,27 @@ header .inicio .subinicios {
   font-size: 50px;
   text-align: center;
   top: 5%;
-  z-index: 3;
+  z-index: 1;
 }
 
 #SERVICIOS {
   background: grey;
   width: 100%;
-  height: 1000px;
-  font-size: 40px;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+}
+#SERVICIOS .tituloservicios {
+  margin: 0;
+  padding: 0;
+  transform: translateY(50px);
+  text-align: center;
+  font-size: 60px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+#SERVICIOS img {
+  width: 20vw;
+  height: 22vh;
 }
 
 /*# sourceMappingURL=style.css.map */
