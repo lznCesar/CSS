@@ -1,0 +1,101 @@
+body {
+  padding: 0;
+  margin: 0px;
+  font-family: sans-serif;
+  background: #ccc;
+}
+
+.container {
+  width: 80%;
+  margin: 100px auto;
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: center;
+}
+.container h1 {
+  font-size: 40px;
+  text-transform: uppercase;
+}
+.container ul {
+  margin: 0;
+  padding: 0;
+}
+.container ul li {
+  list-style: none;
+  float: left;
+  width: 12.5%;
+  box-sizing: border-box;
+  transition: 0.5s;
+}
+.container ul li:hover {
+  transform: rotateY(360deg);
+}
+.container ul li a {
+  display: block;
+  padding: 20px;
+  text-decoration: none;
+  color: #fff;
+}
+.container ul li a .fa {
+  font-size: 40px;
+}
+.container ul li:nth-child(1) {
+  background: #3b5999;
+}
+.container ul li:nth-child(2) {
+  background: #55acee;
+}
+.container ul li:nth-child(3) {
+  background: #dd4b39;
+}
+.container ul li:nth-child(4) {
+  background: #0077B5;
+}
+.container ul li:nth-child(5) {
+  background: #00AFF0;
+}
+.container ul li:nth-child(6) {
+  background: #e4405f;
+}
+.container ul li:nth-child(7) {
+  background: #cd201f;
+}
+.container ul li:nth-child(8) {
+  background: #bd081c;
+}
+
+@media (max-width: 922px) {
+  .container {
+    width: 100%;
+  }
+  .container h1 {
+    font-size: 30px;
+  }
+  .container ul li {
+    width: 25%;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+  }
+  .container h1 {
+    font-size: 20px;
+  }
+  .container ul li {
+    width: 50%;
+  }
+}
+@media (max-width: 414px) {
+  .container {
+    width: 100%;
+  }
+  .container h1 {
+    font-size: 15px;
+  }
+  .container ul li {
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
