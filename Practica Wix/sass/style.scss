@@ -1,139 +1,128 @@
 body {
-    margin: 0%;
-    padding: 0%;
+  margin: 0%;
+  padding: 0%;
 }
- 
-header{
-    display: flex;
-    width: 100vw;
-    height: 15vh;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+
+header {
+  display: flex;
+  width: 100vw;
+  height: 15vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  & #menus {
     position: relative;
-    
-        
-    & #menus{
-        background: rgb(237, 205, 30);
-        width: 28%;  
-        height: 15vh;
-        position: absolute; 
-       
-        & img{
-            position: absolute;   
-            width: 50px;     
-            height: 50px;
-            left: 15%;
-            top: 23%;
-            cursor: pointer;
-        }
+    background: rgb(237, 205, 30);
+    width: 30vw;
+    height: 100%;
+    display: flex;
 
-        & p {
-            position: absolute;
-            text-align: left;
-            font-family: Arial, Helvetica, sans-serif;
-            font-size: 22px;
-            left: 32%;
-            top: 5%;
-            cursor: pointer;
-    
-        }
-    }
-    
-    & .inicio{
-        right: 0%;
-        width: 72%;
-        height: 100%;
-        margin: 0;
-        padding: 0;
-        position: absolute;
-        background: rgb(33, 44, 59);
-        color: white;
-        display: inline-flex;
-        justify-content: space-around; 
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 15px;
-      
-
-    & .nopintar{
-        padding: 10px;
-        margin: 5px;
-        transform: translateY(60px);
-        cursor: pointer;
-        transition: color yellow 5s ease 0s;
-        
-    }
-    & .subinicios{
-        padding: 10px;
-        margin: 5px;
-        transform: translateY(60px);
-        cursor: pointer;
-    }
-    }
+    & img {
+      position: absolute;
+      display: block;
+      width: 50px;
+      height: 50px;
+      cursor: pointer;
+      left: calc(20% - 25px);
+      top: calc(50% - 25px);
     }
 
+    & h1 {
+      position: absolute;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 20px;
+      cursor: pointer;
+      left: 30%;
+      top: 50%;
+      transform: translateY(-70%);
+      margin-left: 10px;
 
-
-    #divvideo{
-        
-        position: relative;
-        width: 100%;
-        background: url('../video/Working\ Site\ -\ 3741.mp4');
-        min-height: 500px;
-        background-attachment: fixed;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-    
-    
-        
-    
-    & video{
-        position: absolute;
-        margin: 0;
-        padding: 0;
-        width: 100%;
-        height: 100%
-
-    
+      & span {
+        font-weight: lighter;
+        letter-spacing: 1px;
+      }
     }
+  }
 
-    & .titulovideo{
-        margin: 10%px;
-        padding: 10px 300px;
-        color: white;
-        position: absolute;
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 50px;
-        text-align: center;
-        top: 5%;
-        z-index: 1;      
-    }
-    }
-    
+  & .inicio {
+    width: 70vw;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background: rgb(33, 44, 59);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
 
-    #SERVICIOS {
-        background: grey;
-        width: 100%;
-        height: 100vh;
+    & ul{
         display: flex;
-        flex-direction: row;
-        
+        list-style: none;
+    
+            }
 
-    & .tituloservicios{
+    & .nopintar {
+      padding: 10px;
+      margin: 5px;
+      transform: translateY(50px);
+      cursor: pointer;
+      transition: color yellow 5s ease 0s;
+    }
+    & .subinicios {
+      padding: 10px;
+      margin: 5px;
+      transform: translateY(50px);
+      cursor: pointer;
+    }
+  }
+}
+
+#divvideo {
+  position: relative;
+  width: 100%;
+  height: 90vh;
+  background: green;
+
+  & video {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100%;
+    z-index: -2;
+  }
+
+  & .titulovideo {
+    margin: 10%px;
+    padding: 10px 300px;
+    color: white;
+    position: absolute;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    text-align: center;
+    top: 5%;
+    z-index: 1;
+  }
+}
+
+#SERVICIOS {
+  background: grey;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+
+  & .tituloservicios {
     margin: 0;
     padding: 0;
     transform: translateY(50px);
     text-align: center;
     font-size: 60px;
     font-family: Arial, Helvetica, sans-serif;
+  }
 
-    }
-
-    & img{
-        width: 20vw;
-        height: 22vh;
-    }
-
-   
-    }
+  & img {
+    width: 20vw;
+    height: 22vh;
+  }
+}

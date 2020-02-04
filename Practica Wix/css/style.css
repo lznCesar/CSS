@@ -10,75 +10,78 @@ header {
   display: flex;
   flex-direction: row;
   align-items: center;
-  position: relative;
 }
 header #menus {
+  position: relative;
   background: #edcd1e;
-  width: 28%;
-  height: 15vh;
-  position: absolute;
+  width: 30vw;
+  height: 100%;
+  display: flex;
 }
 header #menus img {
   position: absolute;
+  display: block;
   width: 50px;
   height: 50px;
-  left: 15%;
-  top: 23%;
   cursor: pointer;
+  left: calc(20% - 25px);
+  top: calc(50% - 25px);
 }
-header #menus p {
+header #menus h1 {
   position: absolute;
-  text-align: left;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 22px;
-  left: 32%;
-  top: 5%;
+  font-size: 20px;
   cursor: pointer;
+  left: 30%;
+  top: 50%;
+  transform: translateY(-70%);
+  margin-left: 10px;
+}
+header #menus h1 span {
+  font-weight: lighter;
+  letter-spacing: 1px;
 }
 header .inicio {
-  right: 0%;
-  width: 72%;
+  width: 70vw;
   height: 100%;
   margin: 0;
   padding: 0;
-  position: absolute;
   background: #212c3b;
   color: white;
-  display: inline-flex;
-  justify-content: space-around;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 15px;
+}
+header .inicio ul {
+  display: flex;
+  list-style: none;
 }
 header .inicio .nopintar {
   padding: 10px;
   margin: 5px;
-  transform: translateY(60px);
+  transform: translateY(50px);
   cursor: pointer;
   transition: color yellow 5s ease 0s;
 }
 header .inicio .subinicios {
   padding: 10px;
   margin: 5px;
-  transform: translateY(60px);
+  transform: translateY(50px);
   cursor: pointer;
 }
 
 #divvideo {
   position: relative;
   width: 100%;
-  background: url("../video/Working Site - 3741.mp4");
-  min-height: 500px;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  height: 90vh;
+  background: green;
 }
 #divvideo video {
   position: absolute;
   margin: 0;
   padding: 0;
-  width: 100%;
+  width: 100vw;
   height: 100%;
+  z-index: -2;
 }
 #divvideo .titulovideo {
   margin: 10% px;
