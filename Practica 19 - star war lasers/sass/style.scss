@@ -1,0 +1,80 @@
+@use './archivodondeguardomixin.scss' as manu;
+// el mixin siempre debe de colocarse antes de ser llamado ya que es un elemento de cascada.
+// @use es la funcion para poder utilizar o importar un documento scss de otro scss, 
+body {
+    margin: 0px;
+    padding: 0px;
+    background: #000;
+}
+
+ul {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: space-around;
+
+    & li {
+        position: relative;
+        list-style: none;
+        height: 300px;
+        width: 10px;
+        margin: 0px 10px;
+
+        &::before {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 30px;
+            background: #262626;
+            border-top: {
+                left-radius: 2px;
+                rig-radius: 2px;
+            }
+            top: -30px;
+            // border-top-left-radius: 2px;
+            // border-top-right-radius: 2px;
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 30px;
+            bottom: -30px;
+            background: #262626;
+            border-bottom: {
+                    left-radius: 2px;
+                    rig-radius: 2px;}
+            bottom: 0px;
+            // border-top-left-radius: 2px;
+            // border-top-right-radius: 2px;
+        }
+        
+        &:nth-child(1) {
+            @include manu.background-sable(#ffd0d0, #f00);
+        }
+// para usar el use debemos nombrar el documento y lo que queremos usar de ese documento
+     &:nth-child(2){
+         @include manu.background-sable(#ffffd7, #ff0)
+     }
+
+     &:nth-child(3){
+        @include manu.background-sable(#bffbbf, #0f0 )
+        }
+        &:nth-child(4){
+        @include manu.background-sable(#acffff, #00f)
+        }
+        &:nth-child(5){
+         @include manu.background-sable(#bebeff, #f0f )
+        }
+
+        &:hover {
+            background: #9b9b9b;
+            box-shadow: none;
+        }
+    }
+
+}

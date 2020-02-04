@@ -1,0 +1,4 @@
+@mixin background-sable($color1, $color2) {
+    background: $color1;
+    box-shadow: 0px 0px 80px $color2, 0px 0px 80px $color2, 0px 0px 80px $color2;
+}

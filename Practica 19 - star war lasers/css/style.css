@@ -1,0 +1,69 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  background: #000;
+}
+
+ul {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: space-around;
+}
+ul li {
+  position: relative;
+  list-style: none;
+  height: 300px;
+  width: 10px;
+  margin: 0px 10px;
+}
+ul li::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 30px;
+  background: #262626;
+  border-top-left-radius: 2px;
+  border-top-rig-radius: 2px;
+  top: -30px;
+}
+ul li::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 30px;
+  bottom: -30px;
+  background: #262626;
+  border-bottom-left-radius: 2px;
+  border-bottom-rig-radius: 2px;
+  bottom: 0px;
+}
+ul li:nth-child(1) {
+  background: #ffd0d0;
+  box-shadow: 0px 0px 80px #f00, 0px 0px 80px #f00, 0px 0px 80px #f00;
+}
+ul li:nth-child(2) {
+  background: #ffffd7;
+  box-shadow: 0px 0px 80px #ff0, 0px 0px 80px #ff0, 0px 0px 80px #ff0;
+}
+ul li:nth-child(3) {
+  background: #bffbbf;
+  box-shadow: 0px 0px 80px #0f0, 0px 0px 80px #0f0, 0px 0px 80px #0f0;
+}
+ul li:nth-child(4) {
+  background: #acffff;
+  box-shadow: 0px 0px 80px #00f, 0px 0px 80px #00f, 0px 0px 80px #00f;
+}
+ul li:nth-child(5) {
+  background: #bebeff;
+  box-shadow: 0px 0px 80px #f0f, 0px 0px 80px #f0f, 0px 0px 80px #f0f;
+}
+ul li:hover {
+  background: #9b9b9b;
+  box-shadow: none;
+}
+
+/*# sourceMappingURL=style.css.map */
