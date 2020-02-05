@@ -58,21 +58,22 @@ header {
     & ul{
         display: flex;
         list-style: none;
-    
-            }
+      }
 
     & .nopintar {
       padding: 10px;
       margin: 5px;
       transform: translateY(50px);
       cursor: pointer;
-      transition: color yellow 5s ease 0s;
+      transition: color yellow .5s ease 0s;
     }
+
     & .subinicios {
       padding: 10px;
       margin: 5px;
       transform: translateY(50px);
       cursor: pointer;
+    
     }
   }
 }
@@ -80,20 +81,26 @@ header {
 #divvideo {
   position: relative;
   width: 100%;
-  height: 90vh;
-  background: green;
+  height: 95vh;
 
-  & video {
-    position: absolute;
+  //background: green;
+
+  .video{
     margin: 0;
     padding: 0;
     width: 100vw;
     height: 100%;
+  }
+
+  & video {
+    width: 100vw;
+    margin: 0;
+    padding: 0;
     z-index: -2;
   }
 
   & .titulovideo {
-    margin: 10%px;
+    margin: 10px;
     padding: 10px 300px;
     color: white;
     position: absolute;
@@ -102,27 +109,61 @@ header {
     text-align: center;
     top: 5%;
     z-index: 1;
+    letter-spacing: 1px;
   }
 }
 
 #SERVICIOS {
-  background: grey;
+  background: white;
   width: 100%;
   height: 100vh;
-  display: flex;
-  flex-direction: row;
 
   & .tituloservicios {
-    margin: 0;
-    padding: 0;
+    margin: 20px;
+    padding: 30px;
     transform: translateY(50px);
     text-align: center;
     font-size: 60px;
     font-family: Arial, Helvetica, sans-serif;
+    color: #C6C6C6;
+    letter-spacing: 1px;
+  }
+
+  & .linea{
+    width: 100px;
+    height: 10px;
+    background-color: #EDCD1E;
+    transform: translateX(590px);
+    margin-bottom: 50px;
+  }
+
+  & .lista{
+    display: flex;
+    justify-content: center;
+  }
+
+  & .galerias{
+    margin: 20px;
+    border: none;
+    width: 300px;
+    background: #f7f7f7
   }
 
   & img {
-    width: 20vw;
-    height: 22vh;
+    width: 100%;
+    height: 250px;
+  }
+
+  & h3{
+    color:#3C5975;
+  }
+  & .descripcion{
+    padding: 5px;
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    letter-spacing: 1px;
+    line-height: 20px;
+    
   }
 }
