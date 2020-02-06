@@ -1,3 +1,9 @@
+$colorbackgroundtexto: #f7f7f7;
+$colorcontraste: rgb(237, 205, 30);
+$letrspacing: 1px;
+
+
+
 body {
   margin: 0%;
   padding: 0%;
@@ -13,7 +19,7 @@ header {
 
   & #menus {
     position: relative;
-    background: rgb(237, 205, 30);
+    background: $colorcontraste;
     width: 30vw;
     height: 100%;
     display: flex;
@@ -55,17 +61,17 @@ header {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 15px;
 
-    & ul{
-        display: flex;
-        list-style: none;
-      }
+    & ul {
+      display: flex;
+      list-style: none;
+    }
 
     & .nopintar {
       padding: 10px;
       margin: 5px;
       transform: translateY(50px);
       cursor: pointer;
-      transition: color yellow .5s ease 0s;
+      transition: color yellow 0.5s ease 0s;
     }
 
     & .subinicios {
@@ -73,7 +79,6 @@ header {
       margin: 5px;
       transform: translateY(50px);
       cursor: pointer;
-    
     }
   }
 }
@@ -85,7 +90,7 @@ header {
 
   //background: green;
 
-  .video{
+  .video {
     margin: 0;
     padding: 0;
     width: 100vw;
@@ -116,7 +121,7 @@ header {
 #SERVICIOS {
   background: white;
   width: 100%;
-  height: 100vh;
+  height: 110vh;
 
   & .tituloservicios {
     margin: 20px;
@@ -125,28 +130,28 @@ header {
     text-align: center;
     font-size: 60px;
     font-family: Arial, Helvetica, sans-serif;
-    color: #C6C6C6;
+    color: #c6c6c6;
     letter-spacing: 1px;
   }
 
-  & .linea{
+  & .linea {
     width: 100px;
     height: 10px;
-    background-color: #EDCD1E;
+    background-color: #edcd1e;
     transform: translateX(590px);
     margin-bottom: 50px;
   }
 
-  & .lista{
+  & .lista {
     display: flex;
     justify-content: center;
   }
 
-  & .galerias{
+  & .galerias {
     margin: 20px;
     border: none;
     width: 300px;
-    background: #f7f7f7
+    background: #f7f7f7;
   }
 
   & img {
@@ -154,16 +159,105 @@ header {
     height: 250px;
   }
 
-  & h3{
-    color:#3C5975;
+  & h3 {
+    color: #3c5975;
   }
-  & .descripcion{
+
+  & .descripcion {
     padding: 5px;
     text-align: left;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 15px;
     letter-spacing: 1px;
     line-height: 20px;
+  }
+}
+
+#nosotros {
+  width: 100%;
+  height: 95vh;
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  background: url(../img/building.jpg);
+  background-attachment:  fixed;
+   background-size: cover;
+
+  #texto-nosotros {
+    width: 50%;
+    height: 100%;
+    background: $colorbackgroundtexto;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+
+    & .linea2 {
+      display: block;
+      width: 120px;
+      height: 10px;
+      background-color: #edcd1e;
+      border: yellow;
+      margin-bottom: 15px;
+      transform: translate(140px, -60px);
+    }
+
+    .encabezado-nosotros {
+      font-size: 60px;
+      letter-spacing: 2px;
+      text-align: center;
+      color: #c6c6c6;
+      padding-top: 15px;
+    }
+
+    .parrafo-nosotros {
+      font-size: 18px;
+      margin-left: 130px;
+      margin-right: 50px;
+      letter-spacing: 1px;
+      line-height: 25px;
+    }
+  }
+}
+
+#yellowbar{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 35vh;
+  background: $colorcontraste;
+
+  & .proyect-list{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 30px 100px;
+    margin: 0;
+    
+
+  & .Prtext{
+    margin: 5px;
+    padding: 30px 20px 20px 10px;
+    font-size: 22px;
+    text-align: center;
+    color: #3C5975;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+
+    & .PrNumbers{
+      font-size: 60px;
+      color: white;
+      letter-spacing: 2px;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
     
   }
+  & .linewhite1{
+  display: block;
+    width: 3px;
+    height: 75px;
+    background-color: white;
+    border: white;
+    transform: translateY(60px);
+    }
+}
 }
