@@ -261,3 +261,161 @@ header {
     }
 }
 }
+
+#proyectos {
+  width: 100%;
+  margin: 0;
+  padding: 0px;
+  height: 200vh;
+  background: red;
+  
+
+  & .titulo-proyectos{
+    margin-top: 0px;
+    padding: 40px;
+    transform: translateY(50px);
+    text-align: center;
+    font-size: 60px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #c6c6c6;
+    letter-spacing: 1px;
+  }
+
+  & .line-proyects{
+    display: block;
+      width: 120px;
+      height: 10px;
+      background-color: #edcd1e;
+      border: yellow;
+      margin-bottom: 15px;
+      transform: translate(570px, -40px);
+  }
+
+  & .proyectos-galeria{
+    width: 100%;
+    height: 150vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    & .row{
+      width: 100%;
+      height: 50%;
+      display: flex;
+      justify-content: center;
+
+      & .img-proyectos{
+        position: relative;
+        width: 30vw;
+        margin: 10px 20px;
+
+        &::after{
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background: #f2f2f2;
+          opacity: 0;
+        }
+
+        &:hover::after{
+          opacity: .5;
+        } 
+
+        &:hover span {
+          opacity: 1;
+        }
+
+     
+
+        & span{
+          position: absolute;
+          display: block; 
+          color: black;
+          font-size: 30px;
+          top: 50%;
+          transform: translate(-50%,-50%);
+          left: 50%;
+          font-family: Arial, Helvetica, sans-serif;
+          opacity: 1;
+          z-index: 2;
+          text-align: center;
+          opacity: 0;
+
+        
+        }
+      
+      & img{
+        display: block;
+        position: relative;
+        width: 100%;
+        height: 100%;
+
+       
+        
+
+   
+
+    
+
+        //&:hover ~ span{
+          //opacity: 1;}
+
+
+        // &:hover::before{
+        //   opacity: 1;
+
+        // }
+      }
+
+      }
+      
+    }
+   
+    
+    // & img {
+    //   width: 450px;
+    //   height: 500px;
+    //   margin: 10px 10px 5px;
+    //   padding: 0px;
+    //   cursor: pointer;
+      
+    // }
+
+    // & .row1{
+    //   margin: px;
+    //   padding: 0px;
+      
+    // }
+
+    // & .img1-proyectos {
+    //   margin: 0px;
+    //   padding: 0px;
+    // }
+
+    // & span{
+    //   //position: absolute;
+    //   display: block;
+    //   color: black;
+    //   font-size: 30px;
+    //   //transform: translate(170px, -300px);
+    //   font-family: Arial, Helvetica, sans-serif;
+    //   width: 100%;
+    //   height: 100%;
+    //   &:after{
+    //     content: attr('data-text');
+    //     top: 0;
+    //     left: 0;
+    //     position: absolute;
+    //     width: 100%;
+    //     height: 100%;
+    //     background: grey;
+    //   }
+    // }
+
+
+
+  }
+}
