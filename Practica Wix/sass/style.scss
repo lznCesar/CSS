@@ -2,8 +2,6 @@ $colorbackgroundtexto: #f7f7f7;
 $colorcontraste: rgb(237, 205, 30);
 $letrspacing: 1px;
 
-
-
 body {
   margin: 0%;
   padding: 0%;
@@ -180,8 +178,8 @@ header {
   padding: 0px;
   display: flex;
   background: url(../img/building.jpg);
-  background-attachment:  fixed;
-   background-size: cover;
+  background-attachment: fixed;
+  background-size: cover;
 
   #texto-nosotros {
     width: 50%;
@@ -218,48 +216,45 @@ header {
   }
 }
 
-#yellowbar{
+#yellowbar {
   margin: 0;
   padding: 0;
   width: 100%;
   height: 35vh;
   background: $colorcontraste;
 
-  & .proyect-list{
+  & .proyect-list {
     display: flex;
     justify-content: center;
     list-style: none;
     padding: 30px 100px;
     margin: 0;
-    
 
-  & .Prtext{
-    margin: 5px;
-    padding: 30px 20px 20px 10px;
-    font-size: 22px;
-    text-align: center;
-    color: #3C5975;
-    font-weight: bold;
-    font-family: Arial, Helvetica, sans-serif;
-
-    & .PrNumbers{
-      font-size: 60px;
-      color: white;
-      letter-spacing: 2px;
+    & .Prtext {
+      margin: 5px;
+      padding: 30px 20px 20px 10px;
+      font-size: 22px;
+      text-align: center;
+      color: #3c5975;
+      font-weight: bold;
       font-family: Arial, Helvetica, sans-serif;
-    }
 
-    
-  }
-  & .linewhite1{
-  display: block;
-    width: 3px;
-    height: 75px;
-    background-color: white;
-    border: white;
-    transform: translateY(60px);
+      & .PrNumbers {
+        font-size: 60px;
+        color: white;
+        letter-spacing: 2px;
+        font-family: Arial, Helvetica, sans-serif;
+      }
     }
-}
+    & .linewhite1 {
+      display: block;
+      width: 3px;
+      height: 75px;
+      background-color: white;
+      border: white;
+      transform: translateY(60px);
+    }
+  }
 }
 
 #proyectos {
@@ -267,10 +262,9 @@ header {
   margin: 0;
   padding: 0px;
   height: 200vh;
-  background: red;
-  
+  background: white;
 
-  & .titulo-proyectos{
+  & .titulo-proyectos {
     margin-top: 0px;
     padding: 40px;
     transform: translateY(50px);
@@ -281,36 +275,36 @@ header {
     letter-spacing: 1px;
   }
 
-  & .line-proyects{
+  & .line-proyects {
     display: block;
-      width: 120px;
-      height: 10px;
-      background-color: #edcd1e;
-      border: yellow;
-      margin-bottom: 15px;
-      transform: translate(570px, -40px);
+    width: 120px;
+    height: 10px;
+    background-color: #edcd1e;
+    border: yellow;
+    margin-bottom: 15px;
+    transform: translate(570px, -40px);
   }
 
-  & .proyectos-galeria{
+  & .proyectos-galeria {
     width: 100%;
     height: 150vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
 
-    & .row{
+    & .row {
       width: 100%;
       height: 50%;
       display: flex;
       justify-content: center;
 
-      & .img-proyectos{
+      & .img-proyectos {
         position: relative;
         width: 30vw;
         margin: 10px 20px;
 
-        &::after{
-          content: '';
+        &::after {
+          content: "";
           position: absolute;
           top: 0;
           left: 0;
@@ -320,102 +314,96 @@ header {
           opacity: 0;
         }
 
-        &:hover::after{
-          opacity: .5;
-        } 
+        &:hover::after {
+          opacity: 0.5;
+        }
 
         &:hover span {
           opacity: 1;
         }
 
-     
-
-        & span{
+        & span {
           position: absolute;
-          display: block; 
+          display: block;
           color: black;
           font-size: 30px;
           top: 50%;
-          transform: translate(-50%,-50%);
+          transform: translate(-50%, -50%);
           left: 50%;
           font-family: Arial, Helvetica, sans-serif;
           opacity: 1;
           z-index: 2;
           text-align: center;
           opacity: 0;
-
-        
         }
-      
-      & img{
-        display: block;
-        position: relative;
-        width: 100%;
-        height: 100%;
 
-       
-        
-
-   
-
-    
-
-        //&:hover ~ span{
-          //opacity: 1;}
-
-
-        // &:hover::before{
-        //   opacity: 1;
-
-        // }
+        & img {
+          display: block;
+          position: relative;
+          width: 100%;
+          height: 100%;
+        }
       }
-
-      }
-      
     }
-   
-    
-    // & img {
-    //   width: 450px;
-    //   height: 500px;
-    //   margin: 10px 10px 5px;
-    //   padding: 0px;
-    //   cursor: pointer;
-      
-    // }
-
-    // & .row1{
-    //   margin: px;
-    //   padding: 0px;
-      
-    // }
-
-    // & .img1-proyectos {
-    //   margin: 0px;
-    //   padding: 0px;
-    // }
-
-    // & span{
-    //   //position: absolute;
-    //   display: block;
-    //   color: black;
-    //   font-size: 30px;
-    //   //transform: translate(170px, -300px);
-    //   font-family: Arial, Helvetica, sans-serif;
-    //   width: 100%;
-    //   height: 100%;
-    //   &:after{
-    //     content: attr('data-text');
-    //     top: 0;
-    //     left: 0;
-    //     position: absolute;
-    //     width: 100%;
-    //     height: 100%;
-    //     background: grey;
-    //   }
-    // }
-
-
-
   }
+}
+
+#clientes {
+  width: 100%;
+  height: 50vh;
+  background: $colorbackgroundtexto;
+
+  & .titulo-clientes {
+    margin-top: 0px;
+    padding: 20px;
+    transform: translateY(25px);
+    text-align: center;
+    font-size: 60px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #c6c6c6;
+    letter-spacing: 1px;
+  }
+
+  & .linea-clientes {
+    display: block;
+    width: 120px;
+    height: 10px;
+    background-color: #edcd1e;
+    border: yellow;
+    margin-bottom: 5px;
+    transform: translate(575px, -45px);
+  }
+
+  & .div-lista-clientes {
+
+    & .lista-clientes {
+      display: flex;
+      margin: 0;
+      flex-direction: row;
+      list-style: none;
+      align-items: center;
+      justify-content: center;
+
+      & .img-clientes {
+        display: block;
+        width: 110px;
+        height: 110px;
+        margin: 0px 15px;
+        padding: 0px 20px;
+        filter: grayscale(90%);
+        cursor: pointer;
+
+      }
+
+      & .img-clientes:hover {
+        filter: grayscale(0%);
+      }
+
+    }
+  }
+}
+
+#contacto{
+  width: 100%;
+  height: 150vh;
 }
