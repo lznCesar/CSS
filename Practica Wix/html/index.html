@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>PAGINA</title>
+    <link
+    href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    rel="stylesheet"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+    crossorigin="anonymous"
+  />
     <link rel="stylesheet" href="../css/style.css" />
   </head>
   <body>
@@ -164,38 +170,107 @@
       </div>
     </section>
 
-    <section id="contacto">
-      <h3 class="titulo-contacto">CONTACTO</h3>
-      <span class="linea-contacto"></span>
-      <div class="div-map">
-        <iframe
-          class="map"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2970.4789184825163!2d-87.62474008483379!3d41.88255637311481!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880e2ca68a4f9c03%3A0x44182cdcb5a91004!2sMillennium%20Park!5e0!3m2!1sen!2smx!4v1581177366653!5m2!1sen!2smx"
-          width="600"
-          height="450"
-          frameborder="0"
-          style="border:0;"
-          allowfullscreen=""
-        ></iframe>
-      </div>
-      <div>
-        <ul class="lista-formato">
-          <li>
-            <h3>Preguntas</h3>
-            Para todo tipo de preguntas, comentarios e inquietudes; por favor
-            llámanos: 914-135-288 o completa el formulario a continuación
-          </li>
-          <li></li>
-        </ul>
-      </div>
-      <div>
-        <ul >
-          <li><h3>Oficina Principal</h3> Av. Los Rosales 122, 28021, Madrid.</li>
-          <li></li>
-          <li></li>
-          <li></li>
-        </ul>
-      </div>
-    </section>
+    <div id="contacto">
+      <section id="sec_contacto">
+        <span id="texto_contacto">
+          <h1>CONTACTO</h1>
+          <span id="linea_contacto"></span>
+        </span>
+    
+        <span id="mapa">
+          <iframe id="mapa_medida" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3701.1395146238015!2d-102.3410899851008!3d21.929187385517668!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8429efd3cb91a13f%3A0xa3ef12cfa3d78da5!2sSofttek!5e0!3m2!1ses!2smx!4v1580882042083!5m2!1ses!2smx" width="1000" height="400" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+        </span>      
+    <span id="oficina_principal">
+    <h1>Oficina Principal</h1>
+    <span id="dir">
+      <p class="p1">Av. Los Rosales 122,</p>
+      <p>28021, Madrid.</p>
+    </span>
+    
+    <span id="correo_e_inf">
+    <p>info@misitio.com</p>
+      <p>Teléfono: 914-135-288 </p>
+      <p>Fax: 914-123-456</p>
+    </span>
+    
+    </span>
+    <span id="preguntas">
+      <h1>Preguntas</h1>
+      <span id="texto_pregunta">
+        Para todo tipo de preguntas, comentarios e
+        <p>
+          inquietudes; por favor llámanos: 914-135-288 o
+        </p>
+        <p>
+          completa el formulario a continuación
+        </p>
+      </span>
+          </span>
+
+    
+          <span id="empleos">
+            <h1>Empleos</h1>
+            <span id="texto_empleos">
+              <p>Para aplicar a un trabajo en Esfera </p>
+              <p>
+                Construcciones, envía tu CV y carta de 
+              </p>
+              <p>
+                recomendación a: info@misitio.com
+              </p>
+            </span>
+          </span>
+    
+          <span id="formulario">
+            <span id="nombre_span">
+              <input id="Nombre" placeholder="Nombre" required type="text" type="text" >
+            </span>
+            <span id="email_span">
+              <input id="email" placeholder="Email" required type="email" type="text">
+            </span>
+            <span>
+              <span id="asunto_span">
+                <input id="asunto" placeholder="Asunto " required type="text">
+              </span>
+            </span>
+            <span id="mensaje_span">
+              <textarea name="" id="mensaje" cols="41" rows="7" placeholder="Mensaje"></textarea>
+            </span>
+            <span id="enviar_boton">
+              <input  id="enviar" value="Enviar " type="submit"> 
+            </span>
+    
+            <span id="linea_final"></span>
+    
+    <span id="presupuesto">
+      <h1>Recibe un presupuesto:</h1>
+    
+    <span id="num">
+     <h1>
+       914-135-288
+     </h1>
+    </span>
+    
+    </span>
+          </span>
+    
+          <footer>
+      
+            <div id="icono">
+              <ul>
+                <li class="iconos">
+                   <span id="final">
+                  &copy; Hecho por Cesar Lozano 2020. Hecho con HTML5 y CSS  
+                </span>
+              </li>
+      
+              <li class="iconos"><a href="#contacto"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+              <li  class="iconos" ><a href="#Proyectos"><i class="fa fa-facebook" aria-hidden="true"></i> </a></li>
+              <li  class="iconos" ><a href="#Nosotros"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+           
+            </ul>
+          </div>
+          </footer>
+    
   </body>
 </html>

@@ -1,6 +1,7 @@
 $colorbackgroundtexto: #f7f7f7;
 $colorcontraste: rgb(237, 205, 30);
 $letrspacing: 1px;
+$fontcomun: Arial, Helvetica, sans-serif;
 
 body {
   margin: 0%;
@@ -56,7 +57,7 @@ header {
     padding: 0;
     background: rgb(33, 44, 59);
     color: white;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: $fontcomun;
     font-size: 15px;
 
     & ul {
@@ -375,7 +376,6 @@ header {
   }
 
   & .div-lista-clientes {
-
     & .lista-clientes {
       display: flex;
       margin: 0;
@@ -392,57 +392,252 @@ header {
         padding: 0px 20px;
         filter: grayscale(90%);
         cursor: pointer;
-
       }
 
       & .img-clientes:hover {
         filter: grayscale(0%);
       }
-
     }
   }
 }
 
-#contacto{
-  width: 100%;
-  height: 150vh;
+#contacto {
+  & #sec_contacto {
+    width: 98.9%;
+    height: 165vh;
+    display: flex;
+    flex-direction: column;
 
-  & .titulo-contacto{
-    margin-top: 10px;
-    padding: 40px;
-    transform: translateY(25px);
-    text-align: center;
-    font-size: 60px;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #c6c6c6;
-    letter-spacing: 1px;
-  }
-
-  & .linea-contacto{
-    display: block;
-    width: 120px;
-    height: 10px;
-    background-color: #edcd1e;
-    border: yellow;
-    margin-bottom: 5px;
-    transform: translate(575px, -65px);
-  }
-
-  & .div-map{
-    width: 100%;
-    height: 50vh;
-    margin: 10px;
-    // position: relative;
-
-    & .map{
-      width: 70%;
-      height: 50vh;
+    & #texto_contacto {
       display: block;
-      // position: absolute;
-      // left: 13%;
-      transform: translateX(calc(50% - 35vh));
-      
-      
+      margin-top: 5%;
+
+      & h1 {
+        font-family: $fontcomun;
+        font-size: 65px;
+        color: #c6c6c6;;
+        text-align: center;
+        margin-top: 3%;
+      }
+      & #linea_contacto {
+        display: inline-block;
+        padding: 0.3% 4%;
+        margin: 0% 0% 4% 46%;
+        background: $colorcontraste;
+      }
+    }
+    & #mapa {
+      display: block;
+      transform: translateX(150px);
+    }
+
+    & #oficina_principal {
+      margin: 3% 0% 0% 60%;
+      & h1 {
+        font-family: $fontcomun;
+        font-size: 25px;
+        margin: 10px 10px 5px 10px ;
+      }
+
+      & #dir {
+        margin: 1% 0% 0% 60%;
+
+        & p {
+          font-family: $fontcomun;
+          font-size: 18px;
+          //margin: 18px 0px 0px 0px;
+
+          & .p1{
+            padding: 0px;
+            margin: 0px;
+          }
+        }
+      }
+      & #correo_e_inf {
+        margin: 0% 0% 0% 60%;
+
+        & p {
+          font-family: $fontcomun;
+          font-size: 18px;
+        }
+      }
+    }
+    & #preguntas {
+      margin: -27% 0% 0% 18%;
+      font-family: $fontcomun;
+      font-size: 18px;
+
+      & h1 {
+        font-family: $fontcomun;
+        font-size: 28px;
+      }
+      & #texto_pregunta {
+        display: block;
+        margin: 2% 0% 0% 0%;
+
+        & p {
+          font-family: $fontcomun;
+          font-size: 18px;
+        }
+      }
+    }
+
+    & #empleos {
+      margin: 10% 0% 0% 60%;
+
+      & h1 {
+        font-family: $fontcomun;
+        font-size: 28px;
+      }
+      & #texto_empleos {
+        display: block;
+        margin: 2% 0% 0% 0%;
+
+        & p {
+          font-family: $fontcomun;
+          font-size: 18px;
+        }
+      }
+    }
+
+    & #formulario {
+      display: block;
+
+      & #nombre_span {
+        display: block;
+        margin: -20% 0% 0% 18%;
+
+        & #Nombre {
+          width: 33.4%;
+          background: $colorbackgroundtexto;
+          height: 3vh;
+
+          font-size: 16px;
+          border: 0;
+        }
+      }
+
+      & #email_span {
+        display: block;
+        margin: 0.5% 0% 0% 18%;
+        & #email {
+          width: 33.4%;
+          height: 3vh;
+          font-size: 16px;
+          background:$colorbackgroundtexto;
+          border: 0;
+        }
+      }
+
+      & #asunto_span {
+        display: block;
+        margin: 0.5% 0% 0% 18%;
+        & #asunto {
+          width: 33.4%;
+          font-size: 16px;
+          background: $colorbackgroundtexto;
+          border: 0;
+          height: 3vh;
+        }
+      }
+      & #mensaje_span {
+        display: block;
+        margin: 0.5% 0% 0% 18%;
+        & #mensaje {
+          font-size: 16px;
+          background: $colorbackgroundtexto;
+          border: 0;
+        }
+      }
+
+      & #enviar_boton {
+        display: block;
+        margin: 0.5% 0% 0% 39.5%;
+        & #enviar {
+          background: rgb(33, 44, 59);
+          color: $colorbackgroundtexto;
+          border: 0;
+          width: 10%;
+          font-family: $fontcomun;
+          height: 4.5vh;
+          font-size: 15px;
+          text-align: center;
+        }
+      }
+
+      & #linea_final {
+        display: inline-block;
+        padding: 0.3% 3%;
+        margin: 1% 0% 5% 60%;
+        background: $colorcontraste;
+      }
+      & #presupuesto {
+        display: block;
+        margin: -3.5% 0% 0% 60%;
+        & h1 {
+          font-family: $fontcomun;
+          font-size: 25px;
+          color:rgb(33, 44, 59);
+          margin: 1px;
+        }
+
+        & #num {
+          & h1 {
+            font-family: $fontcomun;
+            font-size: 25px;
+            color: rgb(33, 44, 59);
+            margin-bottom: 3px;
+          }
+        }
+      }
+    }
+  }
+}
+
+footer {
+  // PARA ACOMODAR LOS ICONOS
+  & #icono {
+
+    padding-top: 1%;
+    width: 100%;
+    height: 5vh;
+
+    & .iconos {
+      float: right;
+      text-align: center;
+      list-style: none;
+      margin: 0% 1% 0% 0%;
+      padding-bottom: 2%;
+
+      & #final {
+        display: block;
+        font-size: 13px;
+        font-family: $fontcomun;
+        font-weight: lighter;
+        margin: 3.5% 0% 0% -350%;
+      }
+
+    
+      & a {
+        display: block;
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+        background: #E0E0E0;
+        text-align: center;
+        //margin: 0 0px;
+        border-radius: 25px;
+        transform: translateX(300px);
+        
+
+
+
+        & .fa {
+          font-size: 22px;
+          color: white;
+
+        }
+      }
     }
   }
 }
